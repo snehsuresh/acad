@@ -67,15 +67,15 @@ Example Values:
 The primary goal is not to minimize the difference between gradients themselves, but to understand and manage the gradients to improve the learning process. Here’s a more detailed breakdown:
 
 ## Goals Related to Gradient Norms
-- Ensure Effective Learning: The main objective is to ensure that the gradients are appropriately sized to update the parameters effectively. If gradients are too small (vanishing gradients) or too large (exploding gradients), learning can be inefficient or unstable.
-- Gradient Magnitude Management:
+-Ensure Effective Learning: The main objective is to ensure that the gradients are appropriately sized to update the parameters effectively. If gradients are too small (vanishing gradients) or too large (exploding gradients), learning can be inefficient or unstable.
+-Gradient Magnitude Management:
 1. Small Gradients: If gradients are very small, it indicates that the network parameters might not be updated sufficiently. This could slow down learning and may lead to poor performance.
 2. Large Gradients: If gradients are very large, it might cause unstable updates, making the learning process erratic or divergent.
 
 -Stable and Effective Training: The goal is to maintain a stable training process where gradients are neither too small nor too large. This stability helps the network converge to an optimal or near-optimal solution efficiently.
 
 ## What You Should Focus On
-- Gradient Flow:
+-Gradient Flow:
 1. Vanishing Gradients: Occur when gradients become very small, especially in deep networks. This can be mitigated by using activation functions like ReLU or advanced techniques like batch normalization.
 2. Exploding Gradients: Occur when gradients become excessively large, which can destabilize training. Techniques like gradient clipping or adjusting the learning rate can help manage this.
 
